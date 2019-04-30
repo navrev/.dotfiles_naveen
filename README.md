@@ -1,2 +1,5 @@
 # .dotfiles_naveen
-dotfiles
+
+Setup:
+
+Install:
