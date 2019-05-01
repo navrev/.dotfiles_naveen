@@ -1,5 +1,5 @@
 BASHRC=.bashrc
-BASH_HISTORY=.bash_history
+BASH_LOGOUT=.bash_logout
 DOTFILES=~/.dotfiles_naveen
 BACKUP_FOLDER=$DOTFILES/old_backup
 
@@ -20,11 +20,11 @@ backup_create() {
 
 if [ "$1" = "setup" ]; then
   backup_create "$BASHRC"
-  backup_create "$BASH_HISTORY"
+  backup_create "$BASH_LOGOUT"
 elif [ "$1" = "cleanup" ] 
 then
   remove_restore "$BASHRC"
-  remove_restore "$BASH_HISTORY"
+  remove_restore "$BASH_LOGOUT"
 else
   echo " argument 'setup' or 'cleanup' required"
 fi
