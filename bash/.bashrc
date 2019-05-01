@@ -116,3 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 export PATH=$PATH:$HOME/phtest/phtest
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/.
